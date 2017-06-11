@@ -2,4 +2,5 @@
     <string name="app_name">EZLogRTV4-0</string>
     <string name="view_exercise_list">Exercise List</string>
     <string name="view_workout">View Workout</string>
+    <string name="start_workout">Start a Workout</string>
 </resources>
