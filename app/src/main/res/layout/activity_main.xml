@@ -6,32 +6,5 @@
     android:layout_height="match_parent"
     tools:context="com.ezlogrtv4_0.cconway002.ezlogrtv4_0.MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="142dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/start_workout"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="144dp"
-        android:layout_height="48dp"
-        android:text="@string/view_exercise_list"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="84dp" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="144dp"
-        android:layout_height="48dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="18dp"
-        android:text="@string/view_workout"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
 </android.support.constraint.ConstraintLayout>
