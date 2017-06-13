@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat">
@@ -10,5 +10,9 @@
         <item name="android:textColorSecondary">@android:color/primary_text_dark</item>
         <item name="android:colorForeground">@color/foreground_material_dark</item>
     </style>
+
+
+
+
 
 </resources>

@@ -4,8 +4,13 @@ import android.support.annotation.IdRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
+
+import static android.R.attr.button;
+import static android.R.id.button1;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,12 +22,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, Viewgroup container,
-                             Bundle savedInstateState){
-        //inflate this layout
-        View layout=inflater.inflate(R.layout.activity_main, container, false);
 
-        return layout;
-    }//end onCreateView
+
+   /* @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        Button button = (Button) findViewById(R.id.button);
+        int text_height = button.getHeight()/2;
+        button.setTextSize(TypedValue.COMPLEX_UNIT_PX, text_height);
+    }*/
 }
