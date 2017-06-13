@@ -3,5 +3,10 @@
     <color name="Primary">#ff9800</color>
     <color name="PrimaryDark">#c66900</color>
     <color name="Accent">#3300ff</color>
+    <color name="primary_material_dark">#ff9800</color>
+    <color name="primary_dark_material_dark">#c66900</color>
+    <color name="accent_material_dark">#3300ff</color>
+    <color name="background_material_dark">#757575</color>
+    <color name="foreground_material_dark">#e0e0e0</color>
 
 </resources>

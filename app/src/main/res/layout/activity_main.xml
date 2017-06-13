@@ -4,7 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ezlogrtv4_0.cconway002.ezlogrtv4_0.MainActivity">
+    tools:context="com.ezlogrtv4_0.cconway002.ezlogrtv4_0.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recycler_view"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+    </android.support.v7.widget.RecyclerView>
 
 
 </android.support.constraint.ConstraintLayout>
