@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                              Bundle savedInstateState){
         //inflate this layout
         View layout=inflater.inflate(R.layout.activity_main, container, false);
-        recyclerView= (RecyclerView) findViewById(R.id.main_recycler_view);
+
         return layout;
     }//end onCreateView
 }
