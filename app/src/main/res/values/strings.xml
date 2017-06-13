@@ -8,4 +8,7 @@
     <string name="title_start_workout">Workout</string>
     <string name="title_workout_history">Previous Workouts</string>
     <string name="title_do_workout">Workout</string>
+    <string name="title_activity_enter_set">EnterSetActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
