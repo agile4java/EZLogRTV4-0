@@ -26,7 +26,8 @@
         <activity
             android:name=".EnterSetActivity"
             android:label="@string/title_activity_enter_set" />
-        <activity android:name=".WorkoutActivity"></activity>
+        <activity android:name=".WorkoutActivity" />
+        <activity android:name=".FutureHomeScreenRecyclerViewActivity"></activity>
     </application>
 
 </manifest>
