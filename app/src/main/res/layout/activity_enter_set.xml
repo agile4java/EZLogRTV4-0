@@ -6,27 +6,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ezlogrtv4_0.cconway002.ezlogrtv4_0.EnterSetActivity"
-    tools:layout_editor_absoluteY="81dp"
-    tools:layout_editor_absoluteX="0dp">
+    tools:context="com.ezlogrtv4_0.cconway002.ezlogrtv4_0.EnterSetActivity">
 
-    <FrameLayout
-        android:id="@+id/content"
+    <Spinner
+        android:id="@+id/spinner_exercises"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp">
+        android:layout_height="42dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:prompt="@string/choose_exercise"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:visibility="visible"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/guideline3"
+        tools:layout_editor_absoluteY="52dp" />
 
-    </FrameLayout>
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/navigation"
-        tools:layout_editor_absoluteY="611dp"
-        tools:layout_editor_absoluteX="601dp" />
+
+
 
     <TextView
         android:id="@+id/textView2"
@@ -102,6 +100,15 @@
         app:layout_constraintRight_toLeftOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation"
+        tools:layout_editor_absoluteY="611dp"
+        tools:layout_editor_absoluteX="601dp" />
+
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -122,19 +129,6 @@
         tools:layout_editor_absoluteX="350dp"/>
 
 
-    <Spinner
-        android:id="@+id/spinner_exercises"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@android:color/background_light"
-        android:prompt="@string/choose_exercise"
-        android:textAppearance="@android:style/TextAppearance.Material.Large"
-        android:visibility="visible"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
-        app:layout_constraintRight_toLeftOf="@+id/guideline3"
-        tools:layout_editor_absoluteY="52dp" />
+
 
 </android.support.constraint.ConstraintLayout>

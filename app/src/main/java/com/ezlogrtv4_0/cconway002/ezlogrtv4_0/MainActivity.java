@@ -22,23 +22,22 @@ public class MainActivity extends AppCompatActivity {
 
     //-----------intents for 4 buttons on home screen-take to activities--------------------------
 
-    public void viewEnterSetActivity (View view){
-        Intent intent=new intent(this, EnterSetActivity.class);
-        startActivity(intent);
+    public void viewStartWorkoutActivity (View view) {
+        Intent intent= new Intent(this, WorkoutActivity.class);
     }//end viewEnterSetActivity
 
     public void viewExerciseListActivity (View view){
-        Intent intent=new intent(this, ExerciseListActivity.class);
+        Intent intent=new Intent(this, ExerciseListActivity.class);
         startActivity(intent);
     }//end viewExerciseListActivty
 
     public void viewLastWorkoutAtivity (View view){
-        Intent intent=new intent(this, LastWorkoutActivity.class);
+        Intent intent=new Intent(this, LastWorkoutActivity.class);
         startActivity(intent);
     }//end viewLastWorkoutActivity
 
     public void viewPreviousWorkoutsActivity (View view){
-        Intent intent=new intent(this, PreviousWorkoutsActivity.class);
+        Intent intent=new Intent(this, PreviousWorkoutsActivity.class);
         startActivity(intent);
     }//end viewPreviousWorkoutsActivity method
 
