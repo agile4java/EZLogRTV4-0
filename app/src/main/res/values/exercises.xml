@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Exercises">
+        <item>Bench_Press</item>
+        <item>Leg_Squats</item>
+        <item>Bicep_Curls</item>
+    </string-array>
+</resources>

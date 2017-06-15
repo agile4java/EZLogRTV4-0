@@ -6,4 +6,15 @@
     android:layout_height="match_parent"
     tools:context="com.ezlogrtv4_0.cconway002.ezlogrtv4_0.ExerciseListActivity">
 
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.ezlogrtv4_0.cconway002.ezlogrtv4_0.ExerciseListFragment"
+        android:layout_width="379dp"
+        android:layout_height="571dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout="@layout/fragment_exercise_list">
+
+    </fragment>
+
 </android.support.constraint.ConstraintLayout>

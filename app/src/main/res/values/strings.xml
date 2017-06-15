@@ -11,4 +11,9 @@
     <string name="title_activity_enter_set">EnterSetActivity</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="exercise">Exercise</string>
+    <string name="weight">Weight</string>
+    <string name="reps">Repititions</string>
+    <string name="hint_enter_weight">Enter Weight</string>
+    <string name="hint_enter_reps">Enter Repitions</string>
 </resources>
