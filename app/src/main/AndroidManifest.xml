@@ -18,16 +18,36 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
         <activity
             android:name=".ExerciseListActivity"
+            android:label="Exercises"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme" />
-        <activity android:name=".LastWorkoutActivity" />
-        <activity android:name=".PreviousWorkoutsActivity" />
+
+        <activity android:name=".LastWorkoutActivity"
+            android:label="Last Workout"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".PreviousWorkoutsActivity"
+            android:label="Workout History"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"/>
+
         <activity
             android:name=".EnterSetActivity"
-            android:label="@string/title_activity_enter_set" />
-        <activity android:name=".WorkoutActivity" />
-        <activity android:name=".FutureHomeScreenRecyclerViewActivity"></activity>
+            android:label="Enter Set"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme"/>
+
+        <activity android:name=".WorkoutActivity"
+            android:label="Workout"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity"/>
+
     </application>
 
 </manifest>

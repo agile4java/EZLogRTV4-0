@@ -16,4 +16,5 @@
     <string name="reps">Repititions</string>
     <string name="hint_enter_weight">Enter Weight</string>
     <string name="hint_enter_reps">Enter Repitions</string>
+    <string name="choose_exercise">Select Exercise</string>
 </resources>

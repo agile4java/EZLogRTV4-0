@@ -1,16 +1,13 @@
 package com.ezlogrtv4_0.cconway002.ezlogrtv4_0;
 
-import android.support.annotation.IdRes;
+
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
-import android.util.TypedValue;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 
-import static android.R.attr.button;
-import static android.R.id.button1;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +20,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //-----------intents for 4 buttons on home screen-take to activities--------------------------
 
+    public void viewEnterSetActivity (View view){
+        Intent intent=new intent(this, EnterSetActivity.class);
+        startActivity(intent);
+    }//end viewEnterSetActivity
+
+    public void viewExerciseListActivity (View view){
+        Intent intent=new intent(this, ExerciseListActivity.class);
+        startActivity(intent);
+    }//end viewExerciseListActivty
+
+    public void viewLastWorkoutAtivity (View view){
+        Intent intent=new intent(this, LastWorkoutActivity.class);
+        startActivity(intent);
+    }//end viewLastWorkoutActivity
+
+    public void viewPreviousWorkoutsActivity (View view){
+        Intent intent=new intent(this, PreviousWorkoutsActivity.class);
+        startActivity(intent);
+    }//end viewPreviousWorkoutsActivity method
+
+
+    //------------------------End of Intents-----------------------------------------------------
+
+
+    //-----------------Attempt to AutoSizeText in buttons-not working yet------------------------
    /* @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
