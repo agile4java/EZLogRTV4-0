@@ -18,4 +18,12 @@
     <string name="hint_enter_reps">Enter Repitions</string>
     <string name="choose_exercise">Select Exercise</string>
     <string name="chosen_exercise">Exercise Selected</string>
+    <string name="select_date">Pick Date</string>
+    <string name="select_workout">Workout</string>
+    <string name="select_exercise_list">Exercises</string>
+    <string name="toolbar_select_date">Pick Date</string>
+    <string name="toolbar_exercise_list">Exercises</string>
+    <string name="toolbar_start_workout">Workout</string>
+    <string name="toolbar_previous_workouts">Workout History</string>
+    <string name="toolbar_last_workout">Last Workout</string>
 </resources>

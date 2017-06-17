@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/toolbar_select_date"
+        android:icon="@drawable/ic_date_range_black_48dp"
+        android:title="@string/toolbar_select_date"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/toolbar_exercise_list"
+        android:icon="@drawable/ic_playlist_add_black_48dp"
+        android:title="@string/toolbar_exercise_list"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/toolbar_start_workout"
+        android:icon="@drawable/ic_fitness_center_black_48dp"
+        android:title="@string/toolbar_start_workout"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/toolbar_previous_workouts"
+        android:title="@string/toolbar_previous_workouts"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/toolbar_last_workout"
+        android:title="@string/toolbar_last_workout"
+        app:showAsAction="never"/>
+</menu>
