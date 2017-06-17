@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context="com.ezlogrtv4_0.cconway002.ezlogrtv4_0.PreviousWorkoutsActivity">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:menu="main_toolbar_actions"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
 </android.support.constraint.ConstraintLayout>

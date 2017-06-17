@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -15,16 +16,24 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar mainToolbar = (Toolbar) findViewById(R.id.main_toolbar);
-        setSupportActionBar(mainToolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+       /* Toolbar mainToolbar = (Toolbar) findViewById(R.id.main_toolbar);
+        setSupportActionBar(mainToolbar);*/
 
 
-    }
+    }//end opCreate
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.main_toolbar_actions, menu);
+        return true;
+    }//end OnCreateOptionsMenu
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
@@ -32,17 +41,21 @@ public class MainActivity extends AppCompatActivity {
             case R.id.toolbar_select_date:
                 return true;
             case R.id.toolbar_exercise_list:
+                startActivity(new Intent(this, ExerciseListActivity.class));
                 return true;
             case R.id.toolbar_last_workout:
+                startActivity(new Intent(this, LastWorkoutActivity.class));
                 return true;
             case R.id.toolbar_previous_workouts:
+                startActivity(new Intent(this, PreviousWorkoutsActivity.class));
                 return true;
             case R.id.toolbar_start_workout:
+                startActivity(new Intent(this, WorkoutActivity.class));
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
-        }
-    }
+        }//end switch
+    }//end onOptionsItemSelected
 
 
     //-----------intents for 4 buttons on home screen-take to activities--------------------------
