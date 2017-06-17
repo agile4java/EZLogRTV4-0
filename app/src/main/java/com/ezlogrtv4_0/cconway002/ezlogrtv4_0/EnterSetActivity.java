@@ -4,62 +4,64 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatSpinner;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-public class EnterSetActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
+
+public class EnterSetActivity extends AppCompatActivity
+        implements AdapterView.OnItemSelectedListener {
 
 
 
-   /* private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
-                    return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
-            }//end switch
-            return false;
-        }//end onNavigationItemSelected method
-
-    };//end BottomNavigationView.OnNavigationItemSelectedListener
-*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_enter_set);
+    //------------------------------tutorials point spinner example--------------------------------
+    //Spinner Element
+    AppCompatSpinner exerciseSpinner = new AppCompatSpinner(this, R.id.spinner_exercises);
 
-        //declare Spinner for Exercise choice
-        Spinner spinner= (Spinner) findViewById(R.id.spinner_exercises);
-        //create an ArrayAdapter using the string array Exercises with default spinner layout
-        ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this, R.array.Exercises,
-                android.R.layout.simple_spinner_item);
-        //Specify the layout to use when the list appears
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        //Apply the adapter to the spinner
-        spinner.setAdapter(adapter);
+    //set spinner click listener
+    exerciseSpinner.setOnItemSelectedListener(this);
 
-//        mTextMessage = (TextView) findViewById(R.id.message);
-//        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-//        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+    //Spinner Dropdown Elements
+    List<String> categories = new ArrayList<String>();
+    categories.add("Automobile");
+    categories.add("Business Services");
+    categories.add("Computers");
+    categories.add("Education");
+    categories.add("Personal");
+    categories.add("Travel");
+
+
+    //create adapter for spinner
+    ArrayAdapter<String> exerciseAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item,
+                categories);
+        exerciseSpinner.setAdapter(exerciseAdapter);
+
+    exerciseSpinner.setAdapter(exerciseAdapter);
+
 
     }//onCreate override method
 
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String exerciseSelected = parent.getItemAtPosition(position).toString();
+        TextView selectedExercise = (TextView) findViewById(R.id.selected_exercise);
+        selectedExercise.setText(exerciseSelected);
+    }
 
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
 
-
-
-
+    }
 
 }//end EnterSetActivityClass
