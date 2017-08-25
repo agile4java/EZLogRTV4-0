@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="workout_dates_array">
+        <item>01/01/2016</item>
+        <item>01/02/2016</item>
+        <item>01/05/2016</item>
+        <item>01/10/2016</item>
+        <item>01/12/2016</item>
+        <item>01/22/2016</item>
+    </string-array>
+</resources>
